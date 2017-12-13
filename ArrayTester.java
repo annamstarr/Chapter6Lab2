@@ -1,18 +1,16 @@
 public class ArrayTester {
-    public static void ain(String[] args) {
+    public static void main(String[] args) {
         int[][] arr1 = {{1,1,1},
-                        {1,1,1}
-                    };
+                        {1,1,1}};
         int[][] arr2 = {{3,2,2},
-                        {4,2,1}
-                    };
+                        {4,2,1}};
         ArrayCalculations ac = new ArrayCalculations();
         double avg = ac.averageArray(arr1);
         System.out.println("The average is " + avg);
         
         int[] result = ac.sumColumns(arr1);
         for (int thing: result) {
-            System.out.println(thing + ", ");
+            System.out.print(thing + ", ");
         }
         
         int[][] squared = ac.squareArray(arr2);
