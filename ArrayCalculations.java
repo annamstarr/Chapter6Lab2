@@ -1,9 +1,5 @@
-public class ArrayCalculations
-{
-        
-    public ArrayCalculations()
-    {
-        
+public class ArrayCalculations {
+    public ArrayCalculations() {   
     }
 
     public double averageArray(int[][] nums) {
@@ -27,5 +23,14 @@ public class ArrayCalculations
         }
         return result;
     }
-    
+    public int[][] squareArray(int[][] nums) {
+        int[][] result = new int[nums.length][nums[0].length]; // have made array with all 0s not tied to nums wont screw up
+        for (int row = 0; row < nums.length; row++) {
+            for (int col = 0; col< nums[0].length; col++) {
+                int value = nums[row][col];
+                result[row][col] = (int) Math.pow(value,2); // or just value * value
+            }
+        }
+        return result;
+    }
 }
