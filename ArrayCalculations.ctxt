@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ArrayCalculations
+comment1.params=
+comment1.target=ArrayCalculations()
+comment2.params=nums
+comment2.target=double\ averageArray(int[][])
+comment3.params=nums
+comment3.target=int[]\ sumColumns(int[][])
+numComments=4
