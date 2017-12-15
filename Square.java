@@ -1,107 +1,55 @@
 // ****************************************************************
 // Square.java
-//
 // Define a Square class with methods to create and read in
 // info for a square matrix and to compute the sum of a row,
-// a col, either diagonal, and whether it is magic.
-//          
+// a col, either diagonal, and whether it is magic    
 // ****************************************************************
 import java.util.Scanner;
 
 public class Square {
-
-
     int[][] square;
-
-   
-
-
-    //--------------------------------------
-
+    int sumRow;
+    
     //create new square of given size
-
-    //--------------------------------------
-
-    public Square()
-
-    {
-
-       
-
+    public Square(int x) {
+        int[][] square = new int[x][x];
     }
-
-
-    //--------------------------------------
 
     //return the sum of the values in the given row
+    public int sumRow(int r, int x) {
+        for (int row = r; row < square[r].length; x++) {
+            sumRow+= square[r][x]; 
+        }
+        return sumRow;
+        }
+    
 
-    //--------------------------------------
-
-    public int sumRow(int row)
-
-    {
-
-        return 0;
-
-    }
-
-
-    //--------------------------------------
-
+    
+    
     //return the sum of the values in the given column
-
-    //--------------------------------------
-
-    public int sumCol(int col)
-
-    {
+    public int sumCol(int col) {
 
         return 0;
 
     }
-
-
-    //--------------------------------------
 
     //return the sum of the values in the main diagonal
-
-    //--------------------------------------
-
-    public int sumMainDiag()
-
-    {
+    public int sumMainDiag() {
 
         return 0;
 
     }
-
-
-    //--------------------------------------
 
     //return the sum of the values in the other ("reverse") diagonal
-
-    //--------------------------------------
-
-    public int sumOtherDiag()
-
-    {
+    public int sumOtherDiag() {
 
         return 0;
 
     }
 
-
-    //--------------------------------------
-
     //return true if the square is magic (all rows, cols, and diags have
-
     //same sum), false otherwise
-
-    //--------------------------------------
-
-    public boolean magic()
-
-    {
+    public boolean magic() {
 
         //Change to work correctly
 
@@ -109,13 +57,7 @@ public class Square {
 
     }
 
-
-    //--------------------------------------
-
     //read info into the square from the standard input.
-
-    //--------------------------------------
-
      public void setSquare(int[][] sq)
 
     {
@@ -124,20 +66,8 @@ public class Square {
 
     }
 
-   
-
-
-
-
-    //--------------------------------------
-
     //print the contents of the square, neatly formatted
-
-    //--------------------------------------
-
-    public void printSquare()
-
-    {
+    public void printSquare() {
 
         for(int row = 0; row < square.length; row++) {
 
